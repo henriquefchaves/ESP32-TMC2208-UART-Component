@@ -74,5 +74,9 @@
         "algorithm": "c",
         "rmt.h": "c"
     },
-    "cmake.cmakePath": "c:\\Users\\Harald\\.platformio\\packages\\tool-cmake\\bin\\cmake.exe"
+    "cmake.cmakePath": "c:\\Users\\Harald\\.platformio\\packages\\tool-cmake\\bin\\cmake.exe",
+    "idf.adapterTargetName": "esp32s3",
+    "idf.openOcdConfigs": [
+        "board/esp32s3-builtin.cfg"
+    ]
 }
