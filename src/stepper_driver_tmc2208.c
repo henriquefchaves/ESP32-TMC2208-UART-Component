@@ -285,12 +285,12 @@ esp_err_t tmc2208_set_current(stepper_driver_t *handle, uint16_t milliampere_run
 
     uint32_t cs_run = 32.0 * 1.41421f * ((float)milliampere_run / 1000.0) * ((TMC2208_R_SENSE + 30.0)  / 325.0) - 1;
     uint32_t cs_hold = (cs_run * percent_hold) / 100;
-    ESP_LOGD(TAG, "Calculated values for %d mA: IRUN=%d IHOLD=%d", milliampere_run, cs_run, cs_hold);
+    ESP_LOGD(TAG, "Calculated values for %d mA: IRUN=%d IHOLD=%d", (int)milliampere_run, (int)cs_run, (int)cs_hold);
     if (cs_run < 16) { //  High sensitivity, low sense resistor voltage
         tmc2208->chopconf.reg.vsense = 1;
         cs_run = 32.0 * 1.41421f * ((float)milliampere_run / 1000.0) * ((TMC2208_R_SENSE + 30.0)  / 180.0) - 1;
         cs_hold = (cs_run * percent_hold) / 100;
-        ESP_LOGD(TAG, "Recalculated values for %d mA: IRUN=%d IHOLD=%d", milliampere_run, cs_run, cs_hold);
+        ESP_LOGD(TAG, "Recalculated values for %d mA: IRUN=%d IHOLD=%d", (int)milliampere_run, (int)cs_run, (int)cs_hold);
     }
     else {
         tmc2208->chopconf.reg.vsense = 0;
