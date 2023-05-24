@@ -15,7 +15,7 @@ static const char* TAG = "main";
 TaskHandle_t pvTask1 = NULL;
 TaskHandle_t pvTask2 = NULL;
 
-void app_main(){
+void app_main(void){
 
     static stepper_conf_t task1_conf = {
         .name = "Task 1",

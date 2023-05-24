@@ -72,11 +72,15 @@
         "stepper_driver_tmc2208.h": "c",
         "chrono": "c",
         "algorithm": "c",
-        "rmt.h": "c"
+        "rmt.h": "c",
+        "stepper_task.h": "c",
+        "rmt_types_legacy.h": "c"
     },
     "cmake.cmakePath": "c:\\Users\\Harald\\.platformio\\packages\\tool-cmake\\bin\\cmake.exe",
     "idf.adapterTargetName": "esp32s3",
     "idf.openOcdConfigs": [
         "board/esp32s3-builtin.cfg"
-    ]
+    ],
+    "idf.portWin": "COM11",
+    "idf.flashType": "UART"
 }
