@@ -6,4 +6,4 @@ include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 
 list(APPEND EXTRA_COMPONENT_DIRS $ENV{IDF_PATH}/components/TMC_stepper_driver)
 
-project(ESP32_TMC_StepperDriver_UART)
+project(ESP32-TMC_StepperDriver_UART)
