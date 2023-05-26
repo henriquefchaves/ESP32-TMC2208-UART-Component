@@ -4,6 +4,4 @@ cmake_minimum_required(VERSION 3.16)
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 
-#list(APPEND EXTRA_COMPONENT_DIRS components/TMC_stepper_driver)
-
 project(ESP32-TMC_StepperDriver_UART)
