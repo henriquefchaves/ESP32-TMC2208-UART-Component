@@ -1,4 +1,9 @@
-# ESP32 TMC2208 UART Component
+# ESP-IDF library for TMC stepper driver (TMC2208 and TMC2209)
+
+### Updated library from Harald  
+
+## Microstep definitions fix
+Order was wrong
 
 ### ESP32 library for Trinamic TMC2208 stepper motor driver
 
@@ -6,3 +11,5 @@ For the [Zyklochron](https://www.haraldkreuzer.net/en/news/designer-clock-3d-pri
 Therefore I wrote this simple library to be able to address the TMC2208 with an ESP32.
 
 You can find a detailed description on [my website](https://www.haraldkreuzer.net/en/news/esp32-library-trinamic-tmc2208-stepper-motor-driver)
+
+## Tested in Sparkfun Thing Plus and ESP32-S3-DevKitC-1 v1.1
