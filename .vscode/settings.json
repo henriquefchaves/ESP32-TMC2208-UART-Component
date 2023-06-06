@@ -1,13 +1,15 @@
 {
   "C_Cpp.intelliSenseEngine": "Tag Parser",
   "idf.flashType": "UART",
-  "idf.portWin": "COM8",
+  "idf.portWin": "COM10",
   "idf.adapterTargetName": "esp32s3",
   "idf.openOcdConfigs": [
     "board/esp32s3-builtin.cfg"
   ],
   "files.associations": {
     "typeinfo": "c",
-    "freertos.h": "c"
+    "freertos.h": "c",
+    "stepper_task.h": "c",
+    "stepper_driver_tmc2208.h": "c"
   }
 }
